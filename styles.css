@@ -92,6 +92,6 @@
 }
 
 .custom-checkbox:checked+label::before {
-    border-color: #0b76ef;
+    border-color: #cd0bef;
     background-color: black;
 }

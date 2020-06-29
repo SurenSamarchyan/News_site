@@ -1,0 +1,56 @@
+.card:empty {
+    width: auto;
+    height: 400px;
+    border-radius: 10px;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+
+    background-repeat: no-repeat;
+    background-image:
+            linear-gradient( 100deg, rgba(255, 255, 255, 0),
+                                     rgba(255, 255, 255, 0.5) 50%,
+                                     rgba(255, 255, 255, 0) 80% ),
+            linear-gradient(lightgray 24px, transparent 0),
+            linear-gradient(lightgray 24px, transparent 0),
+            linear-gradient(lightgray 24px, transparent 0),
+            linear-gradient(lightgray 210px, transparent 0),
+            linear-gradient(lightgray 16px, transparent 0),
+            linear-gradient(lightgray 16px, transparent 0),
+            linear-gradient(lightgray 16px, transparent 0);
+
+
+    background-position:
+            0 0,
+            center 15px,         /* h2 row */       /*margin 5px*/
+            center 44px,         /* h2 row */
+            center 73px,         /* h2 row */
+            center 102px,         /* img block */    /*margin 15px*/
+            center 327px,         /* p row */
+            center 348px,         /* p row */
+            center 369px;         /* p row */
+    background-size:
+            50px 400px,
+            90% 24px,              /* h2 row */
+            90% 24px,              /* h2 row */
+            90% 24px,              /* h2 row */
+            90% 210px,             /* img block */
+            90% 16px,              /* p row */
+            90% 16px,              /* p row */
+            90% 16px;               /* p row */
+
+    animation: shine 1s infinite;
+
+
+
+}
+@keyframes shine {
+    to {
+        background-position: 100% 0,
+        center 15px,         /* h2 row */       /*margin 5px*/
+        center 44px,         /* h2 row */
+        center 73px,         /* h2 row */
+        center 102px,         /* img block */   /*margin 15px*/
+        center 327px,         /* p row */
+        center 348px,         /* p row */
+        center 369px;         /* p row */
+    }
+}
